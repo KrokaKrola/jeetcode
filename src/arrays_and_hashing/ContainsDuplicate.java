@@ -55,7 +55,7 @@ public class ContainsDuplicate {
     /**
      * Solution using array sorting before processing array
      * <p>
-     * Time complexity: O(log(n))
+     * Time complexity: O(n log(n))
      * Space complexity: O(n)
      */
     public static boolean containsDuplicate3(int[] nums) {
