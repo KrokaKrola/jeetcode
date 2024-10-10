@@ -13,6 +13,12 @@ public class ContainsDuplicate {
         System.out.println(res);
     }
 
+    /**
+     * Solution using HashMap
+     * <p>
+     * Time complexity: O(n)
+     * Space complexity: O(n)
+     */
     public static boolean containsDuplicate(int[] nums) {
         HashMap<Integer, Integer> map = new HashMap<>();
 
@@ -27,6 +33,12 @@ public class ContainsDuplicate {
         return false;
     }
 
+    /**
+     * Solution using HashSet
+     * <p>
+     * Time complexity: O(n)
+     * Space complexity: O(n)
+     */
     public static boolean containsDuplicate2(int[] nums) {
         HashSet<Integer> set = new HashSet<>();
         for (int num : nums) {
@@ -40,6 +52,12 @@ public class ContainsDuplicate {
         return false;
     }
 
+    /**
+     * Solution using array sorting before processing array
+     * <p>
+     * Time complexity: O(log(n))
+     * Space complexity: O(n)
+     */
     public static boolean containsDuplicate3(int[] nums) {
         Arrays.sort(nums);
 
