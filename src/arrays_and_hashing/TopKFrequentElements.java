@@ -38,7 +38,6 @@ public class TopKFrequentElements {
     public static int[] topKFrequent2(int[] nums, int k) {
         HashMap<Integer, Integer> map = new HashMap<>();
 
-
         for (int num : nums) {
             if (map.containsKey(num)) {
                 map.put(num, map.get(num) + 1);
