@@ -1,5 +1,6 @@
 package daily;
 
+import java.util.Objects;
 import java.util.PriorityQueue;
 
 public class MaximumScoreAfterKOperations {
@@ -18,7 +19,7 @@ public class MaximumScoreAfterKOperations {
         int operationsDone = 0;
 
         while (operationsDone < k) {
-            int maxItem = maxHeap.poll();
+            int maxItem = Objects.requireNonNull(maxHeap.poll());
             score += maxItem;
             maxItem = Math.ceilDiv(maxItem, 3);
             maxHeap.add(maxItem);
